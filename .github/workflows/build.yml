@@ -1,5 +1,4 @@
-name: Fibonacci Build
-
+name: Fibonacci CI
 on:
   push:
     branches: 
@@ -10,6 +9,7 @@ on:
 
 jobs:
   build:
+    name: FibonacciBuild
     runs-on: ubuntu-latest
     
     steps:
