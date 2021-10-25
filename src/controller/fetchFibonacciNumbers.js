@@ -21,7 +21,7 @@ const fetchFibonacciNumbers = async (req, res) => {
     status: 'Success',
     message: 'Fibonacci numbers fetched successfully',
     data: fibonacciNumbers,
-    totalRunningTime: `${timeDifference} ms`
+    totalRunningTime: `${timeDifference}ms`
   })
 } catch (fibonacciError) {
   return res.status(500).json({
